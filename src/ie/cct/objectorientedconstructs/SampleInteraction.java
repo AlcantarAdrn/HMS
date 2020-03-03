@@ -9,7 +9,7 @@ import ie.cct.objectorientedconstructs.HotelManagementSystem;
 public class SampleInteraction {
 	
 	public static void main(String[] args) {
-    
+    // test with amil
 		// create a new hotel management system
 		HotelManagementSystemInterface hm = new HotelManagementSystemInt();
         // build the hotel from the text file
