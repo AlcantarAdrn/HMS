@@ -11,7 +11,7 @@ public class SampleInteraction {
 	public static void main(String[] args) {
     
 		// create a new hotel management system
-		HotelManagementSystemInterface hm = new HotelManagementSystemInterface();
+		HotelManagementSystemInterface hm = new HotelManagementSystemInt();
         // build the hotel from the text file
 
 		HotelInterface h = hm.setupHotel("mespil.txt");
