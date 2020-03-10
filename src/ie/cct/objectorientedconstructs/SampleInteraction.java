@@ -2,18 +2,16 @@ package ie.cct.objectorientedconstructs;
 
 import ie.cct.objectorientedconstructs.interfaces.HotelInterface;
 import ie.cct.objectorientedconstructs.interfaces.HotelManagementSystemInterface;
+import ie.cct.objectorientedconstructs.s2018385s2018315.HotelManagementSystem;
 
-//change this to match your project package
-import ie.cct.objectorientedconstructs.HotelManagementSystem;
-
-public class SampleInteraction {
+public class SampleInteraction implements HotelManagementSystemInterface{
 	
 	public static void main(String[] args) {
-    // test with amil
-		// create a new hotel management system
-		HotelManagementSystemInterface hm = new HotelManagementSystemInt();
+    
+	
+		HotelManagementSystemInterface hm = new HotelManagementSystem();
         // build the hotel from the text file
-
+		
 		HotelInterface h = hm.setupHotel("mespil.txt");
         // try some bookings
 		h.bookRoom("January", 1, "Double", 5);
@@ -26,6 +24,15 @@ public class SampleInteraction {
 		
         // see the calendar for January for single rooms
 		System.out.println(hm.getCalendar("January", h));
-		
 	}
+		@Override
+		public String getCalendar(String month, HotelInterface hotel) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public HotelInterface setupHotel(String file) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 }
